@@ -1,0 +1,53 @@
+# ================================================
+# GENERAL
+# ================================================
+# Ignore IDEs
+.idea
+
+# Ignore OS files
+.DS_Store
+
+# Dotenv environment variables file
+.env
+.env.local
+.env.development
+.env.development.local
+.env.production
+.env.production.local
+
+# Executables
+*.exe
+*.out
+
+# Packages
+*.tgz
+
+# ================================================
+# VSCODE
+# ================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# ================================================
+# NODE
+# ================================================
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# ================================================
+# YARN
+# ================================================
+yarn-debug.log*
+yarn-error.log*
+
+/.pnp
+.pnp.js
