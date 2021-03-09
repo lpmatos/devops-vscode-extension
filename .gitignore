@@ -1,6 +1,7 @@
 # ================================================
 # GENERAL
 # ================================================
+
 # Ignore IDEs
 .idea
 
@@ -25,6 +26,7 @@
 # ================================================
 # VSCODE
 # ================================================
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -32,14 +34,13 @@
 !.vscode/extensions.json
 *.code-workspace
 
-devops-vscode-extension-*
-
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
 # ================================================
 # NODE
 # ================================================
+
 npm-debug.log*
 
 # Dependency directories
@@ -48,6 +49,7 @@ node_modules/
 # ================================================
 # YARN
 # ================================================
+
 yarn-debug.log*
 yarn-error.log*
 

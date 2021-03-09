@@ -18,18 +18,18 @@ insert_final_newline = true
 # No whitespace at the end of line
 trim_trailing_whitespace = true
 
-[{Makefile,**.mk}]
-# Use tabs for indentation (Makefiles require tabs)
-indent_style = tab
-
 # ================================================
 # 4 SPACE INDENTATION
 # ================================================
-[*.{py,java,r,R}]
+
+[{Makefile,**.mk}]
 indent_size = 4
-indent_style = space
+indent_style = tab
 
 [Dockerfile]
+indent_size = 4
+
+[*.{py,java,r,R}]
 indent_size = 4
 
 [{go.mod,go.sum,*.go,.gitmodules}]
@@ -39,11 +39,10 @@ indent_style = tab
 # ================================================
 # 2 SPACE INDENTATION
 # ================================================
+
 [*.{js,json,y{a,}ml,html,css,cwl,rb,sh}]
 indent_size = 2
-indent_style = space
 
 [*.{md,Rmd,rst}]
 indent_size = 2
-indent_style = space
 trim_trailing_whitespace = false
