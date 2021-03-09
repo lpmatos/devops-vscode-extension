@@ -1,0 +1,31 @@
+on:
+  push:
+    tags:
+      - "*"
+
+name: Deploy VS Code Extension
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install node dependencies
+        run: npm install
+        continue-on-error: false
+
+      - uses: lannonbr/vsce-action@master
+        with:
+          args: "publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }}"
+        env:
+          VSCE_TOKEN: ${{ secrets.VS_MARKETPLACE_TOKEN }}
